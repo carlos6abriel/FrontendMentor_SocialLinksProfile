@@ -1,0 +1,125 @@
+:root{
+    --gren: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+    --font-family: 'Inter';
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: var(--offBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--darkGrey);
+    margin: 50px 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.profileImg{
+    width: 85px;
+    height: 85px;
+}
+
+.container img{
+    display: block;
+    max-width: 100%;
+    border-radius: 100px;
+}
+
+.container h1{
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.container h4{
+    color: var(--gren);
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.container p{
+    color: var(--white);
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0px 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.links a{
+    display: block;
+    height: 45px;
+    border-radius: 8px;
+    padding: 14px 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.links .github, .links .frontendMentor, .links .linkedin, .links .twitter, .links .instagram{
+    width: 100%;
+    height: 45px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.links .frontendMentor, .links .linkedin, .links .twitter, .links .instagram{
+    margin-top: 17px;
+}
+
+.github a:hover, .frontendMentor a:hover, .linkedin a:hover, .twitter a:hover, .instagram a:hover{
+    background-color: var(--gren);
+    color: var(--grey);
+}
+
+.attribution{
+    color: var(--white);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media(max-width: 425px){
+    .container{
+        padding: 30px;
+    }
+    .attribution{
+        font-size: 10px;
+    }
+}
